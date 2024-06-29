@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "590471792560",
+    "project_id": "sharespace-3b",
+    "storage_bucket": "sharespace-3b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:590471792560:android:491cf42e3799e712297875",
+        "android_client_info": {
+          "package_name": "com.threebrains.sharespace"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGfY2xTxwrYsO70ArpDLI1-F_4ffmwMk8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
