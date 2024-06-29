@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -66,12 +67,16 @@ public class WorkspaceAdapter extends RecyclerView.Adapter<WorkspaceAdapter.Work
         LinearLayout llWorkspace;
         public WorkspaceViewHolder(@NonNull View itemView) {
             super(itemView);
-            llWorkspace = itemView.findViewById(R.id.ll_workspace);
-            ivWorkspaceCoverImage = itemView.findViewById(R.id.iv_workspace_cover_image);
-            tvWorkspaceName = itemView.findViewById(R.id.tv_workspace_name);
-            tvWorkspaceResources = itemView.findViewById(R.id.tv_workspace_resources);
-            tvWorkspaceAddress = itemView.findViewById(R.id.tv_workspace_address);
-            tvWorkspacePricePerDay = itemView.findViewById(R.id.tv_workspace_price_per_day);
+            try{
+                llWorkspace = itemView.findViewById(R.id.ll_workspace);
+                ivWorkspaceCoverImage = itemView.findViewById(R.id.iv_workspace_cover_image);
+                tvWorkspaceName = itemView.findViewById(R.id.tv_workspace_name);
+                tvWorkspaceResources = itemView.findViewById(R.id.tv_workspace_resources);
+                tvWorkspaceAddress = itemView.findViewById(R.id.tv_workspace_address);
+                tvWorkspacePricePerDay = itemView.findViewById(R.id.tv_workspace_price_per_day);
+            } catch (Exception e) {
+                Toast.makeText(context, e+"", Toast.LENGTH_SHORT).show();
+            }
         }
     }
 }
