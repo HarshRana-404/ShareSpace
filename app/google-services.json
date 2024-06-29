@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:590471792560:android:491cf42e3799e712297875",
+        "mobilesdk_app_id": "1:590471792560:android:ba148c85addabb35297875",
         "android_client_info": {
-          "package_name": "com.threebrains.sharespace"
+          "package_name": "com.harsh.sharespace"
         }
       },
       "oauth_client": [],
