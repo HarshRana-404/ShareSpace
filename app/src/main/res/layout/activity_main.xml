@@ -5,14 +5,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/all_bg">
 
 
     <FrameLayout
         android:id="@+id/fl_bn_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/bn_main"/>
+        android:layout_above="@id/bn_main" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bn_main"
@@ -20,6 +21,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         app:menu="@menu/menu_bottom_nav"
+        app:itemTextAppearanceActive="@color/primary"
+        android:background="@color/card_view_bg"
         />
 
 </RelativeLayout>
