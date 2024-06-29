@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mi_work_spaces"
+        android:icon="@drawable/ic_workspace"
+        android:title="Workspaces" />
+    <item
+        android:id="@+id/mi_my_work_spaces"
+        android:icon="@drawable/ic_my_workspace"
+        android:title="My Workspaces" />
+    <item
+        android:id="@+id/mi_account"
+        android:icon="@drawable/ic_person"
+        android:title="Account" />
+</menu>
