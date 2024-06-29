@@ -58,12 +58,16 @@ public class WorkspacesFragment extends Fragment {
             adapterWorkspace = new WorkspaceAdapter(fragWorkspaces.getContext(), alWorkspaces);
 
             rvWorkspace.setAdapter(adapterWorkspace);
-            refreshWorkspaces();
         } catch (Exception e) {
             Toast.makeText(requireContext(), e+"", Toast.LENGTH_SHORT).show();
         }
 
         return fragWorkspaces;
+    }
+    public void onResume() {
+        super.onResume();
+        alWorkspaces.clear();
+        refreshWorkspaces();
     }
     public void refreshWorkspaces(){
         try {

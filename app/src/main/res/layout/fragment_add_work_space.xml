@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/all_bg"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.harsh.sharespace.fragments.AddWorkSpaceFragment">
 
@@ -12,12 +13,12 @@
         android:padding="16dp">
 
         <ImageView
+            android:id="@+id/iv_add_workspace_cover_image"
             android:layout_width="match_parent"
             android:layout_height="240dp"
             android:padding="88dp"
             android:clickable="true"
             android:foreground="?attr/selectableItemBackground"
-            app:tint="@color/primary"
             android:background="@drawable/add_img_bg"
             android:src="@drawable/ic_add" />
 

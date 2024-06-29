@@ -32,6 +32,9 @@
             android:exported="false">
 
         </activity>
+
+        <activity android:name=".BookWorkspaceActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
